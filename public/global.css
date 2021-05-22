@@ -1,7 +1,7 @@
 :root {
   --red: #ff3e00;
-  --shadow: -4px -4px 12px rgba(0, 0, 0, 0.15),
-    4px 4px 12px rgba(255, 255, 255, 0.55);
+  --shadow: -4px -4px 0px rgba(0, 0, 0, 0.45),
+    4px 4px 12px rgba(212, 212, 212, 0.45);
 }
 
 html {
