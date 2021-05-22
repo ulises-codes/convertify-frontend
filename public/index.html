@@ -1,18 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset='utf-8'>
-	<meta name='viewport' content='width=device-width,initial-scale=1'>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-	<title>Svelte app</title>
+    <title>Svelte app</title>
 
-	<link rel='icon' type='image/png' href='/favicon.png'>
-	<link rel='stylesheet' href='/global.css'>
-	<link rel='stylesheet' href='/build/bundle.css'>
+    <link rel="icon" type="image/png" href="/convertify-logo.svg" />
+    <link rel="stylesheet" href="/global.css" />
+    <link rel="stylesheet" href="/build/bundle.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Convertify by Ulises Himely",
+        "applicationCategory": "Utility",
+        "applicationSubCategory": "Unit conversion",
+        "abstract": "Quickly convert units with this web application.",
+        "author": {
+          "@type": "Person",
+          "url": "https://ulises.codes",
+          "givenName": "Ulises",
+          "familyName": "Himely",
+          "brand": {
+            "@type": "Organization",
+            "url": "https://ulises.codes",
+            "logo": "https://www.ulises.codes/images/logo/icon@192x.png"
+          }
+        },
+        "potentialAction": {
+          "@type": "InteractAction",
+          "target": [
+            "https://convertify.fun",
+            {
+              "@type": "EntryPoint",
+              "urlTemplate": "http://convertify.fun",
+              "contentType": "application/json+ld"
+            },
+            "android-app://com.urbanspoon/http/www.urbanspoon.com/r/6/92204",
+            {
+              "@type": "EntryPoint",
+              "urlTemplate": "urbanspoon://r/6/92204",
+              "actionApplication": {
+                "@type": "SoftwareApplication",
+                "@id": "284708449",
+                "name": "Urbanspoon iPhone & iPad App",
+                "operatingSystem": "iOS"
+              }
+            },
+            {
+              "@type": "EntryPoint",
+              "urlTemplate": "urbanspoon://r/6/92204",
+              "actionApplication": {
+                "@type": "SoftwareApplication",
+                "@id": "5b23b738-bb64-4829-9296-5bcb59bb0d2d",
+                "name": "Windows Phone App",
+                "operatingSystem": "Windows Phone 8"
+              }
+            }
+          ]
+        }
+      }
+    </script>
 
-	<script defer src='/build/bundle.js'></script>
-</head>
+    <script defer src="/build/bundle.js"></script>
+  </head>
 
-<body>
-</body>
+  <body></body>
 </html>
