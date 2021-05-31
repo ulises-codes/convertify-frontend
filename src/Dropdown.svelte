@@ -3,7 +3,9 @@
   export let name: string
   export let currentValue: string
   export let title: string
-  export let onChange: svelte.JSX.EventHandler<Event, HTMLSelectElement>
+  export let onChange:
+    | undefined
+    | svelte.JSX.EventHandler<Event, HTMLSelectElement>
 </script>
 
 <label for={name}>

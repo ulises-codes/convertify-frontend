@@ -36,7 +36,7 @@
   }
 
   onMount(async () => {
-    const res = await fetch(`${CONVERTIFY.API_URL}/categories`)
+    const res = await fetch(`${API_URL}/categories`)
 
     const data: { categories: string[] } = await res.json()
 
@@ -50,7 +50,7 @@
       if (!category) return
 
       const res = await fetch(
-        `${CONVERTIFY.API_URL}/categories/${category.replace(/ /g, '_')}`
+        `${API_URL}/categories/${category.replace(/ /g, '_')}`
       )
 
       const data = await res.json()
@@ -72,7 +72,7 @@
     if (amount <= 0 || fromUnit.name === toUnit.name) return
 
     const res = await fetch(
-      `${CONVERTIFY.API_URL}/categories/${category.replace(/ /g, '_')}?from=${
+      `${API_URL}/categories/${category.replace(/ /g, '_')}?from=${
         fromUnit.symbol
       }&to=${toUnit.symbol}&amount=${amount}`
     )
@@ -97,6 +97,7 @@
       options={categories}
       bind:currentValue={category}
       title="Category"
+      onChange={undefined}
     />
     <Dropdown
       name="from_unit"

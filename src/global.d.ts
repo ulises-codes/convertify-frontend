@@ -1,3 +1,1 @@
-declare const CONVERTIFY = {
-  API_URL: string,
-}
+declare const API_URL: string

@@ -46,9 +46,7 @@ export default {
   },
   plugins: [
     replace({
-      CONVERTIFY: JSON.stringify({
-        ...config().parsed,
-      }),
+      API_URL: JSON.stringify(process.env.API_URL),
     }),
     svelte({
       preprocess: sveltePreprocess({ sourceMap: !production }),
